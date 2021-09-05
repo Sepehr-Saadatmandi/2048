@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Concert One", cursive;
+  font-size: 17pt;
+  color: antiquewhite;
+}
+
+body {
+  background-color: rgb(77, 134, 151);
+}
+
+/* ------------------------------------------------ */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgb(25, 25, 25);
+  border-radius: 10px;
+  width: 650px;
+  margin: 30px auto;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 150px;
+}
+
+#header > div {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: rgb(190, 189, 77);
+  color: black;
+  font-size: 35pt;
+}
+
+#btn-new {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: rgb(79, 143, 100);
+  cursor: pointer;
+}
+
+#btn-new:active {
+  background-color: rgb(44, 82, 57);
+}
+
+#score {
+  background-color: rgb(79, 143, 100);
+}
+
+#highscore {
+  font-size: 10pty;
+  background-color: rgb(79, 143, 100);
+}
+
+#board {
+  width: 620px;
+  height: 620px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+  background-color: rgb(24, 43, 49);
+}
+
+.board-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(52, 92, 104);
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 15px;
+}
